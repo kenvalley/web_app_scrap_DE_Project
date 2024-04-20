@@ -7,7 +7,6 @@ def aws_configure():
     from botocore.exceptions import ClientError
     import time
 
-    # def conf():
     try:
         config = configparser.ConfigParser()
         config.read_file(open('encrypt.cfg'))
@@ -88,7 +87,6 @@ def aws_configure():
             else:
                 print("Unexpected error: %s" % e)
 
-    #def create_redshift_cluster():
     try:
         response = redshift.create_cluster(        
             #HW
