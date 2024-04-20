@@ -149,8 +149,4 @@ def aws_configure():
 
     return endpoint
 
-
-    #create_redshift_cluster()
-
-
 #aws_configure()
